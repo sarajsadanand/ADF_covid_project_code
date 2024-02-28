@@ -1,0 +1,9 @@
+{
+	"name": "saraj-covid-reporting-adf",
+	"location": "uksouth",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "e1246080-9e07-4901-a2fb-251aa0faed47",
+		"tenantId": "f685e7dd-1558-4c90-ae44-d3df47f251d8"
+	}
+}
