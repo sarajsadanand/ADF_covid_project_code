@@ -1,5 +1,5 @@
 {
-	"name": "ds_cases_deaths_raw_csv_http",
+	"name": "ds_github_ecdc_data_raw_csv_http",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "ls_http_github_azure_data_factory_project_covid19_main",

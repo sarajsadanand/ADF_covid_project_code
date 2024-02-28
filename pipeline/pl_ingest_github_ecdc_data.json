@@ -1,9 +1,9 @@
 {
-	"name": "pl_ingest_cases_deaths_data",
+	"name": "pl_ingest_github_ecdc_data",
 	"properties": {
 		"activities": [
 			{
-				"name": "Copy cases and deaths data",
+				"name": "Copy ECDC Data from Github",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -48,19 +48,39 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "ds_cases_deaths_raw_csv_http",
-						"type": "DatasetReference"
+						"referenceName": "ds_github_ecdc_data_raw_csv_http",
+						"type": "DatasetReference",
+						"parameters": {
+							"relativeURL": {
+								"value": "@pipeline().parameters.sourceRelativeURL",
+								"type": "Expression"
+							}
+						}
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "ds_cases_deaths_raw_csv_dl",
-						"type": "DatasetReference"
+						"referenceName": "ds_github_ecdc_data_raw_csv_dl",
+						"type": "DatasetReference",
+						"parameters": {
+							"filename": {
+								"value": "@pipeline().parameters.sinkFileName",
+								"type": "Expression"
+							}
+						}
 					}
 				]
 			}
 		],
 		"concurrency": 1,
+		"parameters": {
+			"sourceRelativeURL": {
+				"type": "string"
+			},
+			"sinkFileName": {
+				"type": "string"
+			}
+		},
 		"annotations": [],
 		"lastPublishTime": "2024-02-28T02:03:54Z"
 	},
