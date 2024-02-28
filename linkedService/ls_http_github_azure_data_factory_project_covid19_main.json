@@ -1,0 +1,12 @@
+{
+	"name": "ls_http_github_azure_data_factory_project_covid19_main",
+	"properties": {
+		"annotations": [],
+		"type": "HttpServer",
+		"typeProperties": {
+			"url": "https://raw.githubusercontent.com/sarajsadanand/azure_data_factory_project_covid19/main",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Anonymous"
+		}
+	}
+}
