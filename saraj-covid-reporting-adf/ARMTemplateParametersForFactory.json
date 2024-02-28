@@ -19,6 +19,12 @@
 		},
 		"tr_ingest_population_data_properties_typeProperties_scope": {
 			"value": "/subscriptions/27062347-708a-405a-a59f-a65b115422dc/resourceGroups/covid-reporting-rg/providers/Microsoft.Storage/storageAccounts/sarajcovidreportingsa"
+		},
+		"tr_ingest_hospital_admissions_data_properties_pl_ingest_github_ecdc_data_parameters_sourceRelativeURL": {
+			"value": "ecdc_data/hospital_admissions.csv"
+		},
+		"tr_ingest_hospital_admissions_data_properties_pl_ingest_github_ecdc_data_parameters_sinkFileName": {
+			"value": "hospital_admissions.csv"
 		}
 	}
 }
