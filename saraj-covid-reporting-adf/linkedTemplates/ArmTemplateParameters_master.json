@@ -15,16 +15,16 @@
 			"value": "https://sarajcovidreportingdl.dfs.core.windows.net/"
 		},
 		"ls_http_github_azure_data_factory_project_covid19_main_properties_typeProperties_url": {
-			"value": "https://raw.githubusercontent.com/sarajsadanand/azure_data_factory_project_covid19/main/"
-		},
-		"tr_ingest_population_data_properties_typeProperties_scope": {
-			"value": "/subscriptions/27062347-708a-405a-a59f-a65b115422dc/resourceGroups/covid-reporting-rg/providers/Microsoft.Storage/storageAccounts/sarajcovidreportingsa"
+			"value": "@{linkedService().sourceBaseURL}"
 		},
 		"tr_ingest_hospital_admissions_data_properties_pl_ingest_github_ecdc_data_parameters_sourceRelativeURL": {
 			"value": "ecdc_data/hospital_admissions.csv"
 		},
 		"tr_ingest_hospital_admissions_data_properties_pl_ingest_github_ecdc_data_parameters_sinkFileName": {
 			"value": "hospital_admissions.csv"
+		},
+		"tr_ingest_population_data_properties_typeProperties_scope": {
+			"value": "/subscriptions/27062347-708a-405a-a59f-a65b115422dc/resourceGroups/covid-reporting-rg/providers/Microsoft.Storage/storageAccounts/sarajcovidreportingsa"
 		},
 		"containerUri": {
 			"value": ""

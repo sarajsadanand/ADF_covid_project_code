@@ -21,11 +21,7 @@
 		},
 		"ls_http_github_azure_data_factory_project_covid19_main_properties_typeProperties_url": {
 			"type": "string",
-			"defaultValue": "https://raw.githubusercontent.com/sarajsadanand/azure_data_factory_project_covid19/main/"
-		},
-		"tr_ingest_population_data_properties_typeProperties_scope": {
-			"type": "string",
-			"defaultValue": "/subscriptions/27062347-708a-405a-a59f-a65b115422dc/resourceGroups/covid-reporting-rg/providers/Microsoft.Storage/storageAccounts/sarajcovidreportingsa"
+			"defaultValue": "@{linkedService().sourceBaseURL}"
 		},
 		"tr_ingest_hospital_admissions_data_properties_pl_ingest_github_ecdc_data_parameters_sourceRelativeURL": {
 			"type": "string",
@@ -34,6 +30,10 @@
 		"tr_ingest_hospital_admissions_data_properties_pl_ingest_github_ecdc_data_parameters_sinkFileName": {
 			"type": "string",
 			"defaultValue": "hospital_admissions.csv"
+		},
+		"tr_ingest_population_data_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/27062347-708a-405a-a59f-a65b115422dc/resourceGroups/covid-reporting-rg/providers/Microsoft.Storage/storageAccounts/sarajcovidreportingsa"
 		},
 		"containerUri": {
 			"type": "string",
@@ -74,14 +74,14 @@
 					"ls_http_github_azure_data_factory_project_covid19_main_properties_typeProperties_url": {
 						"value": "[parameters('ls_http_github_azure_data_factory_project_covid19_main_properties_typeProperties_url')]"
 					},
-					"tr_ingest_population_data_properties_typeProperties_scope": {
-						"value": "[parameters('tr_ingest_population_data_properties_typeProperties_scope')]"
-					},
 					"tr_ingest_hospital_admissions_data_properties_pl_ingest_github_ecdc_data_parameters_sourceRelativeURL": {
 						"value": "[parameters('tr_ingest_hospital_admissions_data_properties_pl_ingest_github_ecdc_data_parameters_sourceRelativeURL')]"
 					},
 					"tr_ingest_hospital_admissions_data_properties_pl_ingest_github_ecdc_data_parameters_sinkFileName": {
 						"value": "[parameters('tr_ingest_hospital_admissions_data_properties_pl_ingest_github_ecdc_data_parameters_sinkFileName')]"
+					},
+					"tr_ingest_population_data_properties_typeProperties_scope": {
+						"value": "[parameters('tr_ingest_population_data_properties_typeProperties_scope')]"
 					}
 				}
 			},
