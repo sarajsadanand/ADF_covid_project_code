@@ -2,14 +2,14 @@
 	"name": "tr_ingest_ecdc_data_from_github",
 	"properties": {
 		"annotations": [],
-		"runtimeState": "Stopped",
+		"runtimeState": "Started",
 		"pipelines": [],
 		"type": "ScheduleTrigger",
 		"typeProperties": {
 			"recurrence": {
-				"frequency": "Minute",
-				"interval": 15,
-				"startTime": "2024-02-29T03:44:00",
+				"frequency": "Day",
+				"interval": 1,
+				"startTime": "2024-02-29T03:47:00",
 				"timeZone": "India Standard Time"
 			}
 		}
